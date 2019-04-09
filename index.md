@@ -1,4 +1,4 @@
-![Lyra logo](https://github.com/lyraproj/lyra/raw/master/docs/media/lyrabanner.png)
+![Lyra logo](assets/lyrabanner.png)
 
 # What is Lyra?
 Lyra (“lee-ruh”) is an open source workflow engine for provisioning and managing cloud native infrastructure. Using infrastructure as code, Lyra enables you to declaratively provision and manage public cloud, private cloud, and other API-backed resources as well as orchestrate imperative actions. For more information, see the [README.md](https://github.com/lyraproj/lyra) in the main project repository.
