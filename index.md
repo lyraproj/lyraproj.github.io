@@ -5,13 +5,19 @@ Lyra (“lee-ruh”) is an open source workflow engine for provisioning and mana
 
 # Getting started
 
-If you're using homebrew, you can use:
+The fastest way to get started is with the official Lyra Docker container. You can browse all the available tags and builds on [the Lyra org on dockerhub](https://hub.docker.com/r/lyraproj/lyra) or pull the latest Alpine-based image at:
+
+```
+docker pull lyraproj/lyra:latest-alpine
+```
+
+Experimental homebrew support is available with:
 
 ```
 brew install lyraproj/lyra/lyra
 ```
 
-We'll have RPMs and other package formats available soon; for now on other platforms, follow the [build instructions](https://github.com/lyraproj/lyra#build) in the README.
+On other platforms, or if you're interested in hacking on the codebase directly, follow the [build instructions](https://github.com/lyraproj/lyra#build) in the README.
 
 Check out the [example workflows](https://github.com/lyraproj/lyra/tree/master/workflows) to get an idea of what Lyra can do. In particular the ["foobernetes.yaml"](https://github.com/lyraproj/lyra/blob/master/workflows/foobernetes.yaml) has a heavily annotated workflow that describes the deployment of infrastructure to a simple Kubernetes-like service.
 
