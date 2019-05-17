@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 logo: assets/lyratile1.png
 title: Lyra
+collections:
+  - docs

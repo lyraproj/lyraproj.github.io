@@ -21,10 +21,18 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>Cloud-native infrastructure provisioning</p>
-
+        <p>Lyra is a workflow engine for provisioning and orchestrating cloud native infrastructure.</p>
         <p class="view"><a href="https://github.com/lyraproj/lyra">View the Project on GitHub <small>lyraproj/lyra</small></a></p>
 
+        <h2>Docs!</h2>
+        {% assign mydocs = site.docs | group_by: 'category' %}
+        {% for cat in mydocs %}
+        <h3>{{ cat.name | capitalize }}</h3>
+              {% assign items = cat.items | sort: 'order' %}
+              {% for item in items %}
+                <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+              {% endfor %}
+        {% endfor %}
 
         {% if site.show_downloads %}
         <ul class="downloads">
@@ -33,6 +41,8 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
+
+
       </header>
 
       <section>
