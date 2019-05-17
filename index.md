@@ -5,14 +5,28 @@ Lyra (“lee-ruh”) is an open source workflow engine for provisioning and mana
 
 # Getting started
 
-The fastest way to get started is with the official Lyra Docker container. You can browse all the available tags and builds on [the Lyra org on dockerhub](https://hub.docker.com/r/lyraproj/lyra) or just grab the latest image. We suggest mounting a directory at `/src/lyra/local` to save your work on the host filesystem:
+The fastest way to get started is with the official Lyra Docker container. You can browse all the available tags and builds on [the Lyra org on dockerhub](https://hub.docker.com/r/lyraproj/lyra) or just grab the 0.1.0 image: 
 
-```
-docker pull lyraproj/lyra
-docker run -it \
+1. Create a `lyra-local` directory to save your work locally. 
+
+   ```
+   cd
+   mkdir lyra-local
+   ```
+
+2. Pull the Lyra container:
+
+   ```
+   docker pull lyraproj/lyra:0.1.0
+   ```
+
+3. Run the container in interactive mode and mount the directory at `/src/lyra/local` to your `local-lyra` directory.
+
+   ```
+   docker run -it \
    --mount type=bind,src=$HOME/lyra-local,dst=/src/lyra/local \
    lyraproj/lyra:latest /bin/ash
-```
+   ```
 
 Experimental homebrew support is available with:
 
