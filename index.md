@@ -17,7 +17,7 @@ The fastest way to get started is with the official Lyra Docker container. You c
 2. Pull the Lyra container:
 
    ```
-   docker pull lyraproj/lyra:0.1.0
+   docker pull lyraproj/lyra:latest
    ```
 
 3. Run the container in interactive mode and mount the directory at `/src/lyra/local` to your `local-lyra` directory.
@@ -28,7 +28,7 @@ The fastest way to get started is with the official Lyra Docker container. You c
    lyraproj/lyra:latest /bin/ash
    ```
 
-Experimental homebrew support is available with:
+Homebrew support is available with:
 
 ```
 brew install lyraproj/lyra/lyra
